@@ -98,8 +98,8 @@ try:
 		eEVENTVALIDATION=requests.utils.quote(soup.find(id="__EVENTVALIDATION")['value'])
 		data="ctl00%24ScriptManager1=ctl00%24UpdatePanel1%7Cctl00%24ContentPlaceHolder1%24btnSubmit&__EVENTTARGET=&__EVENTARGUMENT=&__VIEWSTATE="+eVIEWSTATE+"&__VIEWSTATEGENERATOR="+eVIEWSTATEGENERATOR+"&__EVENTVALIDATION="+eEVENTVALIDATION+"&ctl00%24ContentPlaceHolder1%24gvFeedback%24ctl02%24rblVal="+str(point)+"&ctl00%24ContentPlaceHolder1%24gvFeedback%24ctl03%24rblVal="+str(point)+"&ctl00%24ContentPlaceHolder1%24gvFeedback%24ctl04%24rblVal="+str(point)+"&ctl00%24ContentPlaceHolder1%24gvFeedback%24ctl05%24rblVal="+str(point)+"&ctl00%24ContentPlaceHolder1%24gvFeedback%24ctl06%24rblVal="+str(point)+"&ctl00%24ContentPlaceHolder1%24gvFeedback%24ctl07%24rblVal="+str(point)+"&ctl00%24ContentPlaceHolder1%24gvFeedback%24ctl08%24rblVal="+str(point)+"&ctl00%24ContentPlaceHolder1%24gvFeedback%24ctl09%24rblVal="+str(point)+"&ctl00%24ContentPlaceHolder1%24gvFeedback%24ctl10%24rblVal="+str(point)+"&ctl00%24ContentPlaceHolder1%24gvFeedback%24ctl11%24rblVal="+str(point)+"&ctl00%24ContentPlaceHolder1%24gvFeedback%24ctl12%24rblVal="+str(point)+"&ctl00%24ContentPlaceHolder1%24gvFeedback%24ctl13%24rblVal="+str(point)+"&ctl00%24ContentPlaceHolder1%24gvFeedback%24ctl14%24rblVal="+str(point)+"&ctl00%24ContentPlaceHolder1%24gvFeedback%24ctl15%24rblVal="+str(point)+"&ctl00%24ContentPlaceHolder1%24gvFeedback%24ctl16%24rblVal="+str(point)+"&ctl00%24ContentPlaceHolder1%24tbComment=&__ASYNCPOST=true&ctl00%24ContentPlaceHolder1%24btnSubmit=Submit"
 		session.post(new_link,data=data,headers=headers)
-		print("[+] ",str(1)," Feedback Submitted!")
-		j++;
+		print("[+] ",str(j)," Feedback Submitted!")
+		j+=1
 
 except:
 	print("[-] Some Error Occured!")
