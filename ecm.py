@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 #Author Shashwat Kumar
-#Github https://github.com/rahudraz
+#Github https://github.com/rahuldraz
 
 import requests
 from bs4 import BeautifulSoup
